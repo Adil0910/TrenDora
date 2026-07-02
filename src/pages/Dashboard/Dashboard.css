@@ -1,0 +1,11 @@
+.dashboard-title {
+  font-size: 22px;
+  color: #111827;
+  margin-bottom: 24px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}

@@ -1,0 +1,27 @@
+.settings-page {
+  max-width: 600px;
+}
+
+.settings-card {
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background-color: #ffffff;
+}
+
+.settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings-row h3 {
+  font-size: 14px;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.settings-row p {
+  font-size: 13px;
+  color: #6b7280;
+}
