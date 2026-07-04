@@ -2,11 +2,11 @@
   width: 240px;
   height: 100vh;
   height: 100dvh;
-  border-right: 1px solid #e5e7eb;
+  border-right: 1px solid var(--border-color);
   padding: 24px 12px;
   position: sticky;
   top: 0;
-  background-color: #ffffff;
+  background-color: var(--bg-surface);
 }
 
 .sidebar-close-btn {
@@ -25,7 +25,7 @@
   gap: 10px;
   padding: 10px 14px;
   border-radius: 8px;
-  color: #374151;
+  color: var(--text-tertiary);
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -33,12 +33,12 @@
 }
 
 .sidebar-link:hover {
-  background-color: #f3f4f6;
+  background-color: var(--bg-muted);
 }
 
 .sidebar-link-active {
-  background-color: #eef2ff;
-  color: #4f46e5;
+  background-color: var(--bg-muted);
+  color: var(--accent);
 }
 
 .sidebar-icon {
@@ -72,7 +72,7 @@
     background: none;
     border: none;
     font-size: 22px;
-    color: #6b7280;
+    color: var(--text-secondary);
     margin-bottom: 16px;
     cursor: pointer;
   }

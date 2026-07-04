@@ -8,14 +8,16 @@
   gap: 14px;
   padding: 24px;
   border-radius: 12px;
-  border: 1px solid #e5e7eb;
-  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-surface);
 }
 
 .code-gen-select {
   padding: 10px 14px;
   border-radius: 8px;
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
   font-size: 14px;
   width: fit-content;
 }
@@ -23,7 +25,9 @@
 .code-gen-textarea {
   padding: 12px 14px;
   border-radius: 8px;
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
   font-size: 14px;
   font-family: inherit;
   resize: vertical;

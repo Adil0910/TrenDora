@@ -9,14 +9,15 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  height: 100dvh;
   width: 100%;
 }
 
 .loader-spinner {
   display: inline-block;
   border-radius: 50%;
-  border: 3px solid #e5e7eb;
-  border-top-color: #4f46e5;
+  border: 3px solid var(--border-color);
+  border-top-color: var(--accent);
   animation: spin 0.7s linear infinite;
 }
 

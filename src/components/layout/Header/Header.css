@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 16px 32px;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .dashboard-header-left {
@@ -17,14 +17,14 @@
   background: none;
   border: none;
   font-size: 24px;
-  color: #374151;
+  color: var(--text-tertiary);
   cursor: pointer;
 }
 
 .dashboard-header-title {
   font-size: 16px;
   font-weight: 600;
-  color: #111827;
+  color: var(--text-primary);
 }
 
 .dashboard-header-actions {
@@ -37,7 +37,7 @@
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  background-color: #4f46e5;
+  background-color: var(--accent);
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -51,7 +51,7 @@
   border: none;
   cursor: pointer;
   font-size: 20px;
-  color: #6b7280;
+  color: var(--text-secondary);
   display: flex;
 }
 

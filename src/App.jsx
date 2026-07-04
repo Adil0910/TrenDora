@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import AppRoutes from "./routes/AppRoutes.jsx";
 import Loader from "./components/ui/Loader";
 import { getProfile } from "./services/authService.js";
@@ -10,6 +10,11 @@ import "./styles/global.css";
 function App() {
   const dispatch = useDispatch();
   const [checkingSession, setCheckingSession] = useState(true);
+  const themeMode = useSelector((state) => state.theme.mode);
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", themeMode);
+  }, [themeMode]);
 
   useEffect(() => {
     const restoreSession = async () => {

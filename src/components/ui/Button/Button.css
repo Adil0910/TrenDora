@@ -14,21 +14,21 @@
 }
 
 .btn-primary {
-  background-color: #4f46e5;
+  background-color: var(--accent);
   color: #ffffff;
 }
 
 .btn-primary:hover:not(:disabled) {
-  background-color: #4338ca;
+  background-color: var(--accent-hover);
 }
 
 .btn-secondary {
-  background-color: #f3f4f6;
-  color: #111827;
+  background-color: var(--bg-muted);
+  color: var(--text-primary);
 }
 
 .btn-secondary:hover:not(:disabled) {
-  background-color: #e5e7eb;
+  background-color: var(--border-color);
 }
 
 .btn-danger {

@@ -4,17 +4,18 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  height: 100dvh;
   gap: 12px;
   text-align: center;
 }
 
 .not-found-page h1 {
   font-size: 64px;
-  color: #4f46e5;
+  color: var(--accent);
 }
 
 .not-found-page p {
   font-size: 14px;
-  color: #6b7280;
+  color: var(--text-secondary);
   margin-bottom: 12px;
 }

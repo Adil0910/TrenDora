@@ -1,6 +1,13 @@
+import { useEffect, useRef } from "react";
 import "./ChatWindow.css";
 
 const ChatWindow = ({ messages }) => {
+  const bottomRef = useRef(null);
+
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages]);
+
   return (
     <div className="chat-window">
       {messages.length === 0 && (
@@ -15,6 +22,8 @@ const ChatWindow = ({ messages }) => {
           {message.content}
         </div>
       ))}
+
+      <div ref={bottomRef} />
     </div>
   );
 };

@@ -10,7 +10,7 @@
 
 .chat-empty-state {
   margin: auto;
-  color: #9ca3af;
+  color: var(--text-secondary);
   font-size: 14px;
 }
 
@@ -25,15 +25,15 @@
 
 .chat-bubble-user {
   align-self: flex-end;
-  background-color: #4f46e5;
+  background-color: var(--accent);
   color: #ffffff;
   border-bottom-right-radius: 4px;
 }
 
 .chat-bubble-ai {
   align-self: flex-start;
-  background-color: #f3f4f6;
-  color: #111827;
+  background-color: var(--bg-muted);
+  color: var(--text-primary);
   border-bottom-left-radius: 4px;
 }
 

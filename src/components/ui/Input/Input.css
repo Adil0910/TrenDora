@@ -8,20 +8,22 @@
 .input-group label {
   font-size: 14px;
   font-weight: 500;
-  color: #374151;
+  color: var(--text-tertiary);
 }
 
 .input-field {
   padding: 10px 14px;
   border-radius: 8px;
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
   font-size: 14px;
   outline: none;
   transition: border-color 0.2s ease;
 }
 
 .input-field:focus {
-  border-color: #4f46e5;
+  border-color: var(--accent);
 }
 
 .input-error {
