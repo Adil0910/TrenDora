@@ -10,18 +10,21 @@ export const useAuth = () => {
 
   const login = async (credentials) => {
     const { data } = await loginUser(credentials);
+    localStorage.setItem("token", data.data.token);
     dispatch(setUser(data.data));
     navigate("/dashboard");
   };
 
   const register = async (details) => {
     const { data } = await registerUser(details);
+    localStorage.setItem("token", data.data.token);
     dispatch(setUser(data.data));
     navigate("/dashboard");
   };
 
   const logout = async () => {
     await logoutUser();
+    localStorage.removeItem("token");
     dispatch(clearUser());
     navigate("/login");
   };

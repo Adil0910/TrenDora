@@ -13,7 +13,10 @@ export const useChat = (chatId) => {
   useEffect(() => {
     if (!chatId) return;
 
-    socketRef.current = io(SOCKET_URL, { withCredentials: true });
+    socketRef.current = io(SOCKET_URL, {
+      withCredentials: true,
+      auth: { token: localStorage.getItem("token") },
+    });
     socketRef.current.emit("join-chat", chatId);
 
     socketRef.current.on("receive-message", (message) => {
