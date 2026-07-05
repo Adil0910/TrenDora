@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import Button from "../../ui/Button";
-import InstallButton from "../../common/InstallButton";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -10,11 +9,10 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <Link to="/" className="navbar-logo">
-        AI SaaS
+        TrenDora
       </Link>
 
       <div className="navbar-actions">
-        <InstallButton />
         {isAuthenticated ? (
           <Link to="/dashboard">
             <Button variant="primary">Dashboard</Button>
