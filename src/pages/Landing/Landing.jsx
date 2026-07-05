@@ -11,9 +11,9 @@ const Landing = () => {
       <Navbar />
 
       <section className="landing-hero">
-        <h1>Build faster with AI, all in one place</h1>
+        <h1>Build faster with TrenDora, all in one place</h1>
         <p>
-          Chat with AI, analyze your resume, generate code, and fix bugs —
+          Chat with TrenDora, analyze your resume, generate code, and fix bugs —
           everything a developer needs, powered by Gemini.
         </p>
         <Link to="/signup">
