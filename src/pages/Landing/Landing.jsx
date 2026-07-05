@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Navbar from "../../components/layout/Navbar";
 import Footer from "../../components/layout/Footer";
 import Button from "../../components/ui/Button";
+import InstallButton from "../../components/common/InstallButton/InstallButton.jsx";
 import "./Landing.css";
 
 const Landing = () => {
@@ -18,6 +19,7 @@ const Landing = () => {
         <Link to="/signup">
           <Button variant="primary">Get Started Free</Button>
         </Link>
+        <InstallButton />
       </section>
 
       <Footer />
