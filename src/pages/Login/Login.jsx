@@ -55,7 +55,7 @@ const Login = () => {
           value={formData.email}
           onChange={handleChange}
           error={errors.email}
-          placeholder="you@example.com"
+          placeholder="your@gmail.com"
         />
         <Input
           label="Password"
