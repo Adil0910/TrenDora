@@ -55,7 +55,7 @@ const Signup = () => {
           value={formData.name}
           onChange={handleChange}
           error={errors.name}
-          placeholder="enter your name"
+          placeholder="Adil Ehtesham"
         />
         <Input
           label="Email"
