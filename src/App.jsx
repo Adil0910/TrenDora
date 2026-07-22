@@ -1,15 +1,13 @@
-import { useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
 import AppRoutes from "./routes/AppRoutes.jsx";
-import Loader from "./components/ui/Loader";
 import { getProfile } from "./services/authService.js";
-import { setUser } from "./store/authSlice.js";
+import { setUser, clearUser } from "./store/authSlice.js";
 import "./styles/global.css";
 
 function App() {
   const dispatch = useDispatch();
-  const [checkingSession, setCheckingSession] = useState(true);
   const themeMode = useSelector((state) => state.theme.mode);
 
   useEffect(() => {
@@ -22,17 +20,11 @@ function App() {
         const { data } = await getProfile();
         dispatch(setUser(data.data));
       } catch (error) {
-        // No valid session, user stays logged out
-      } finally {
-        setCheckingSession(false);
+        dispatch(clearUser()); // marks sessionChecked true even on failure
       }
     };
     restoreSession();
   }, [dispatch]);
-
-  if (checkingSession) {
-    return <Loader fullPage />;
-  }
 
   return (
     <BrowserRouter>
