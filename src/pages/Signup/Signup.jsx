@@ -55,7 +55,7 @@ const Signup = () => {
           value={formData.name}
           onChange={handleChange}
           error={errors.name}
-          placeholder="John Doe"
+          placeholder="Enter Your Name"
         />
         <Input
           label="Email"
@@ -64,7 +64,7 @@ const Signup = () => {
           value={formData.email}
           onChange={handleChange}
           error={errors.email}
-          placeholder="you@example.com"
+          placeholder="your@gmail.com"
         />
         <Input
           label="Password"
